@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html lang="en-Us">
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title>AwesomeCo</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>AwesomeCo</h1>
-    <p>This is the first paragraph.</p>
-    <p>This is the second paragaraph.</p>
-    <p>This is the third paragraph.</p>
-  </body>
+		<title>Voidzone Home</title>
+    <link href="css/voidzone.css" rel="stylesheet">
+	</head>
+
+<body>
+  <div id = "container">
+    <div id = "menu"> 
+      <button onClick = "voidZone()" id = "voidZoneButton" class = "menuButton">Voidzone</button> 
+      <button onClick = "shopWorld()" id = "shopButton" class = "menuButton">Armory</button>
+      <button onClick = 'battleWorld()' id = "battleButton" class = "menuButton">Battle</button>
+    </div>
+    
+    <div id = "game">
+      Welcome to the Voidzone!
+      <br />
+      <br />
+      Please click on the start button below to
+      <br />
+      start.
+    </div>
+    <br />
+    <button id = "start" onClick = "start()" style = "width: 5%; font-size: 20px; margin: auto; display: block; background-color: white; color: black">
+      START
+    </button>
+    <br />
+    <button id="displayStats" onClick = "displayStats()" style = "width: 5%; font-size: 20px; margin: auto; display: block; background-color: white; color: black">
+      PROFILE
+    </button>
+    
+  </div>
+  <script src="js/voidzone.js"></script>
+</body>
 </html>
